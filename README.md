@@ -23,21 +23,21 @@ Let's use our front-end web development skills to create a "living" pet! We'll u
 
 * This should also "start the game", and cause the timer to start running and the following things to happen:
 
-* The game should display a character of your choice (and its name) on the screen to represent your pet. While the pet is alive, it must move somehow.  You can use CSS or jQuery animation, or you can swap out GIFs, or you can somehow manually have it moving around the screen by changing the HTML with some kind of timer.  It's up to you.  But there must be some kind of motion when it's alive, and it should stop when it's dead.
+  * The game should display a character of your choice (and its name) on the screen to represent your pet. While the pet is alive, it must move somehow.  You can use CSS or jQuery animation, or you can swap out GIFs, or you can somehow manually have it moving around the screen by changing the HTML with some kind of timer.  It's up to you.  But there must be some kind of motion when it's alive, and it should stop when it's dead.
 
-* Clearly display the pet's age, and its hunger, boredom, and sleepiness metrics for your pet.  They should be updated on the screen as they change.
+  * Clearly display the pet's age, and its hunger, boredom, and sleepiness metrics for your pet.  They should be updated on the screen as they change.
   
-* Increase your pet's age every [how ever long you want].
+  * Increase your pet's age every [how ever long you want].
 
-* Increase your pet's hunger, sleepiness, and boredom metrics at intervals of your choosing.  
+  * Increase your pet's hunger, sleepiness, and boredom metrics at intervals of your choosing.  
 
-* **Important**: There should be only one `setInterval()` running in your entire app. See your instructors if this a source of confusion for you.
+  * **Important**: There should be only one `setInterval()` running in your entire app. See your instructors if this a source of confusion for you.
 
-* You pet should die if hunger, boredom, or sleepiness hits 10.
+  * You pet should die if hunger, boredom, or sleepiness hits 10.
 
-* Add UI elements to the page to let the user feed your pet, turn off the lights, and play with your pet.
-* The feed and play buttons can just change the values, but the light switch must function differently.  The page should change visually to reflect the lights being off for a limited amount of time, and during that time, the sleepiness should go down instead of up (it's up to you what happens with hunger and boredom while your pet is sleeping).  After a specific time interval, the lights should automatically come back on, and the game should go back to working the way it did before you turned them off.
-* You must morph your pet at certain ages.
+  * Add UI elements to the page to let the user feed your pet, turn off the lights, and play with your pet.
+  * The feed and play buttons can just change the values, but the light switch must function differently.  The page should change visually to reflect the lights being off for a limited amount of time, and during that time, the sleepiness should go down instead of up (it's up to you what happens with hunger and boredom while your pet is sleeping).  After a specific time interval, the lights should automatically come back on, and the game should go back to working the way it did before you turned them off.
+  * You must morph your pet at certain ages.
 
 
 
