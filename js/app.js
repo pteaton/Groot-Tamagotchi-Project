@@ -4,16 +4,15 @@ console.log("Tama-gotcha!")
 
 /// create class for tamagotchi
 
-class Tamagotchi  {
-	constructor(hunger, sleepiness, boredom, age, name) {
-		this.hunger = hunger
-		this.sleepiness = sleepiness
-		this.boredom = boredom
-		this.age = age
+class Tamagotchi {
+	constructor(name) {
 		this.name = name
+		this.age = 0
+		this.boredom = 1
+		this.hunger = 1
+		this.sleepiness = 1
 	}
 }
-
 /// hunger (1-10 scale)
 /// sleepiness (1-10 scale)
 /// boredom (1-10 scale)
@@ -22,10 +21,14 @@ class Tamagotchi  {
 
 
 
-
-
 // create game object
- const game = {
+game = {
+	makeTamagotchi(name) {
+		game.tamagotchi = new Tamagotchi(name)
+	}
+
+}
+ 
 	// include methods in game object
 
 
@@ -52,9 +55,19 @@ class Tamagotchi  {
 
 // display character
 
+$( "#create-form" ).on("submit", (event) => {
+	event.preventDefault()
+	game.makeTamagotchi($(" #name-input" ).val())
+})
 
 
-}
+
+
+
+
+
+
+
 
 
 // game start

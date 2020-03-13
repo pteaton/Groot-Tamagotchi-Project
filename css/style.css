@@ -1,6 +1,7 @@
 body {
 	background-color: darkred;
 	text-align:center;
+	font-family: "Lucida Console", monospace;
 }
 
 
@@ -14,9 +15,9 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	background-color: lightsteelblue;
-	width: 70vw; 
- 	height: 70vh; 
- 	padding: 50px 2px;
+	width: 60vw; 
+ 	height: 80vh; 
+ 	padding: 20px;
  	margin: 0 auto; 
  	border-radius: 50px;
 
@@ -33,7 +34,7 @@ body {
 
 #Tama-Zone {
 	height: 85%;
-	background-color: lightsteelblue;
+	background-color: whitesmoke;
 	border: 2px solid darkred;
 	border-radius: 50px;
 }
@@ -44,26 +45,14 @@ body {
 	align-items: flex-end;
 	justify-content: space-around;
 	height: 50px;
-
 }
 
-#create {
+#create-form {
+	padding-top: 2px;
+}
+
+button {
 	font-size: 16px;
 	border-radius: 50px;
+	font-family: "Lucida Console", monospace;
 }
-
-#play {
-	font-size: 16px;
-	border-radius: 50px;
-}
-
-#rest {
-	font-size: 16px;
-	border-radius: 50px;
-}
-
-#feed {
-	font-size: 16px;
-	border-radius: 50px;
-}
-
