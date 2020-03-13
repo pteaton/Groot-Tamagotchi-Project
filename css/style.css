@@ -1,49 +1,69 @@
 body {
-	background-color: lavender;
+	background-color: darkred;
+	text-align:center;
 }
 
 
-div.container {
+/*div {
+	border: .5px solid darkred;
+}*/
+
+
+#Main-Contain {
 	display: flex;
-	flex-direction: center;
-	justify-content: center;
-	width: 400px;
-	background-color: rgb(255, 127, 0);
-}
-
-.box {
-	display: flex;
-	flex-direction: center;
-	justify-content: center;
-	height: 50px;
-	width: 50px;
-	background-color: green;
-	color: white;
-}
-
-
-.box-model {
-	background-color: #CCAACC;
-	flex-direction: center;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: lightsteelblue;
 	width: 70vw; 
- 	height: 50vh; 
- 	padding: 50px 0;
+ 	height: 70vh; 
+ 	padding: 50px 2px;
  	margin: 0 auto; 
  	border-radius: 50px;
 
 }
 
-.box-model div {
+#Status-Bar {
 	display: flex;
-	flex-direction: center;
-	justify-content: center;
-	height: 60px;
-	width: 60px;
-	background-color: pink;
-	margin: 5px 0 0 10px;
-	padding-left: 5px;
-	border-left: 1px solid red;
-	
+	justify-content: space-around;
+	text-align: center;
+	color: black;
+	height: 30px;
+	background-color: lightsteelblue;
+}
+
+#Tama-Zone {
+	height: 85%;
+	background-color: lightsteelblue;
+	border: 2px solid darkred;
+	border-radius: 50px;
+}
+
+
+#Button-Bar {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	height: 50px;
+
+}
+
+#create {
+	font-size: 16px;
+	border-radius: 50px;
+}
+
+#play {
+	font-size: 16px;
+	border-radius: 50px;
+}
+
+#rest {
+	font-size: 16px;
+	border-radius: 50px;
+}
+
+#feed {
+	font-size: 16px;
+	border-radius: 50px;
 }
 

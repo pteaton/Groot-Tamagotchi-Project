@@ -29,7 +29,6 @@ class Tamagotchi  {
 	// include methods in game object
 
 
-}
 
 
 
@@ -54,6 +53,10 @@ class Tamagotchi  {
 // display character
 
 
+
+}
+
+
 // game start
 
 
@@ -63,6 +66,10 @@ class Tamagotchi  {
 
 
 /// Event listeners
+/// button for create tamagotchi
+/// button for feed method
+/// button for sleep method
+/// 
 
 
 
