@@ -1,0 +1,49 @@
+body {
+	background-color: lavender;
+}
+
+
+div.container {
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	width: 400px;
+	background-color: rgb(255, 127, 0);
+}
+
+.box {
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	background-color: green;
+	color: white;
+}
+
+
+.box-model {
+	background-color: #CCAACC;
+	flex-direction: center;
+	justify-content: center;
+	width: 70vw; 
+ 	height: 50vh; 
+ 	padding: 50px 0;
+ 	margin: 0 auto; 
+ 	border-radius: 50px;
+
+}
+
+.box-model div {
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	height: 60px;
+	width: 60px;
+	background-color: pink;
+	margin: 5px 0 0 10px;
+	padding-left: 5px;
+	border-left: 1px solid red;
+	
+}
+
