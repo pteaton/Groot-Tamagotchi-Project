@@ -1,18 +1,16 @@
-console.log("Tama-gotcha!")
+console.log("Tama-Groot!")
 
 
 
 /// create class for tamagotchi
 
 class Tamagotchi {
-	constructor(name) {
-		this.name = name
-		this.age = 0
-		this.boredom = 1
-		this.hunger = 1
-		this.sleepiness = 1
-	}
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
 }
+
 /// hunger (1-10 scale)
 /// sleepiness (1-10 scale)
 /// boredom (1-10 scale)
@@ -21,23 +19,44 @@ class Tamagotchi {
 
 
 
-// create game object
-game = {
-	makeTamagotchi(name) {
-		game.tamagotchi = new Tamagotchi(name)
-	}
+/// create game object
+const game = {
+	tamagotchi: null,
+	intervalID: null,
+	gameTimer: 0,
+	sleepLevel: 0,
+	
+
+
+
+
+    startGame: function() {
+        $('#tamaImage1').show()
+
+    },
+
+
+
+
+    makeTamagotchi(name) {
+        game.tamagotchi = new Tamagotchi(name)
+    },
+
+    startTimer: function() {
+        this.timerID = setInterval() => {
+
+        }
+    }
+
 
 }
- 
-	// include methods in game object
 
 
 
 
+// include methods in game object
 
 
-
-// 
 
 // ability to feed pet
 // Increase your pet's hunger, sleepiness, and boredom metrics at intervals of your choosing.
@@ -55,17 +74,21 @@ game = {
 
 // display character
 
-$( "#create-form" ).on("submit", (event) => {
-	event.preventDefault()
-	game.makeTamagotchi($(" #name-input" ).val())
+
+// submit button/ create name
+$("#create-form").on("submit", (event) => {
+    event.preventDefault()
+    game.makeTamagotchi($(" #name-input").val())
 })
 
 
 
+// need to hide submit button
+// $("#hide").click(function(){
+//   $("p").hide();
+// });
 
-
-
-
+// $(selector).toggle(speed,callback);
 
 
 
@@ -75,17 +98,16 @@ $( "#create-form" ).on("submit", (event) => {
 
 
 
+/// Event Listeners ///
 
 
-
-/// Event listeners
 /// button for create tamagotchi
+
+
 /// button for feed method
-/// button for sleep method
-/// 
 
 
+/// button for rest
 
 
-
-
+/// button for play
