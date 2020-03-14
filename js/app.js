@@ -1,113 +1,92 @@
-console.log("Tama-Groot!")
-
-
-
-/// create class for tamagotchi
-
 class Tamagotchi {
-    constructor(name, age) {
+    constructor(name) {
         this.name = name
-        this.age = age
     }
 }
 
-/// hunger (1-10 scale)
-/// sleepiness (1-10 scale)
-/// boredom (1-10 scale)
-/// age
-/// name
+const app = {
 
+    tamagotchi: null,
+    intervalId: null,
+    gameTimer: 0,
+    sleepLevel: 0,
+    hungryLevel: 0,
+    boredLevel: 0,
+    age: 0,
 
+    startGame: function(name) {
 
-/// create game object
-const game = {
-	tamagotchi: null,
-	intervalID: null,
-	gameTimer: 0,
-	sleepLevel: 0,
-	
+        this.createTamagotchi(name)
+        this.showPets()
+        this.timer()
+        this.hunger()
+	},
 
+    showPets: function() {
 
-
-
-    startGame: function() {
+        $('#NameDiv').trigger('reset')
         $('#tamaImage1').show()
+        $('.timer').show()
+        $('#para').show()
 
     },
 
+    createTamagotchi: function(name) {
+
+        const newTamagotchi = new Tamagotchi(name)
+        this.tamagotchi = newTamagotchi
+        this.printNameAndAge()
 
 
-
-    makeTamagotchi(name) {
-        game.tamagotchi = new Tamagotchi(name)
     },
 
-    startTimer: function() {
-        this.timerID = setInterval() => {
+    printNameAndAge: function() {
 
-        }
-    }
+        const $ul = $('#unord-list')
+        $ul.text("")
 
+        const $li = $('<li></li>')
+
+        $li.text(`Name: ${this.tamagotchi.name}`)
+        console.log($li.text())
+
+        $ul.append($li)
+
+    },
+
+    timer: function() {
+        this.intervalId = setInterval(() => {
+            $('#timer').text(this.gameTimer++)
+            if ($('#timer').text() % 10 == 0) {
+                $('#HungerDiv').text(this.hungryLevel++)
+                $('#SleepinessDiv').text(this.sleepLevel++)
+                $('#BoredomDiv').text(this.boredLevel++)
+                $('#AgeDiv').text(this.age++)
+            }
+        }, 1000)
+    },
+
+    hunger: function() {
+
+
+    },
+    sleepiness: function() {
+
+    },
+
+    boredom: function() {
+
+    },
 
 }
 
+$('#NameDiv').on('submit', (event) => {
 
-
-
-// include methods in game object
-
-
-
-// ability to feed pet
-// Increase your pet's hunger, sleepiness, and boredom metrics at intervals of your choosing.
-/// You pet should die if hunger, boredom, or sleepiness hits 10.
-
-// ability to name pet
-
-// ablity to move pet on screen
-
-// ability to morph your pet at certain ages
-
-
-// Increase your pet's age every [how ever long you want].
-
-
-// display character
-
-
-// submit button/ create name
-$("#create-form").on("submit", (event) => {
+    // stops default form submitting
     event.preventDefault()
-    game.makeTamagotchi($(" #name-input").val())
+
+    const $name = $('#NameDiv').val()
+
+    app.startGame($name)
+
 })
-
-
-
-// need to hide submit button
-// $("#hide").click(function(){
-//   $("p").hide();
-// });
-
-// $(selector).toggle(speed,callback);
-
-
-
-
-// game start
-
-
-
-
-/// Event Listeners ///
-
-
-/// button for create tamagotchi
-
-
-/// button for feed method
-
-
-/// button for rest
-
-
-/// button for play
