@@ -1,83 +1,108 @@
-body {
-	background-color: darkred;
-	text-align:center;
-	font-family: "Lucida Console", monospace;
-}
-
-#Main-Contain {
+body{
+	background-color: lightsteelblue;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	background-color: lightsteelblue;
-	width: 60vw; 
- 	height: 80vh; 
- 	padding: 20px;
- 	margin: 0 auto; 
- 	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	
 }
 
-#Status-Bar {
+
+h1{
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 	text-align: center;
-	color: black;
-	height: 30px;
-	background-color: lightsteelblue;
+}
+form {
+	display: flex;
+	justify-content: space-between;
+	color: darkred;
+	background-color: lightgrey;
+	padding: 10pt;
 }
 
-#Tama-Zone {
-	display: flex;
-	flex-direction: column;
-	height: 85%;
-	background-color: white;
-	border: 2px solid darkred;
-	border-radius: 50px;
+#titleHeading{
+	color: solid black;
+	width:50%;
+	display: inline-block;
+	
+}
+#name{
+	margin:10pt;
 }
 
-#Button-Bar {
+#realContainer {
+	background-color: lightsteelblue
+	height:5vh;
 	display: flex;
-	align-items: flex-end;
 	justify-content: space-around;
-	height: 50px;
 }
 
-#create-form {
-	padding-top: 2px;
+#grootStatus li {
+	color: lightsteelblue;
+	font-size: 18pt;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	margin:15pt;
+	
 }
 
-#tamaImage1 {
+#timer{
+	color: whitesmoke;
+	font-size: 24pt;
+	margin:5pt;
+	font-style: bold;
+
+}
+	
+.switch{
+	height:60pt;
+	width:35pt;
+	border: solid whitesmoke;
+	margin-top: 5pt;
+	align-content: center;
+}
+
+#upgrade {
+	height:60pt;
+	width:35pt;
+}
+
+.grootTamagotchi{
+	margin: auto center;
+	width: 35%;
+}
+
+.container{
 	display: flex;
 	align-items: center;
-	width: 20%;
-	border-radius: 50px;
+	flex-direction: column;
+	width: 35%;
+	
 }
 
-#tamaImage2 {
+.tamagotchiZone {
+	width: 25%;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 20%
+}
+
+.fieldContainer{
+	background-color: blue;
 	display: flex;
-	align-items: center;
-	width: 20%;
-	border-radius: 50px;
+	justify-content: center;
+	height:10vh;
+	font-size: 18pt;
+	width: inline-block;
+	margin: 0 auto;
+	padding:5pt 5pt 5pt 5pt;
+
 }
 
-#tamaImage3 {
-	display: flex;
-	align-items: center;
-	width: 20%;
-	border-radius: 50px;
-}
-
-button {
-	font-size: 16px;
-	border-radius: 50px;
-	border: 2px solid darkred;
-	font-family: "Lucida Console", monospace;
-}
-
-
-img {
-	display: none;
-}
-
+]
 
 
 

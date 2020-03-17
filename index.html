@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Tamagotchi!</title>
+	<title>Tamagotchi</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-	<h1 id="Tamagotchi-Title">Tamagotchi</h1>
 
-	<div id="Main-Contain">
-		<!-- stats bar -->
-		<form id="create-form">
-			<label for="nameinput">Name:</label><input type="text" name="name-input" id="name-input" placeholder="Name" \><button>Submit</button>
+
+
+
+<h1 id='titleHeading'>Tamagotchi</h1>
+
+	<div class="fieldContainer">
+		<form class="form"> I am Groot!
+		<!-- <div id="realContainer"> -->
+			<input id="name" type='text' name='tamagatchi-name' placeholder='Name your new friend'></input>
+			<button id='name-input'>Create</button>
+		<!-- </div> -->
 		</form>
-		<div id="Status-Bar">
-			<div id="NameDiv">Name:</div>
-			<div id="AgeDiv">Age:</div>
-			<div id="HungerDiv">Hunger:</div>
-			<div id="BoredomDiv">Boredom:</div>
-			<div id="SleepinessDiv">Sleep:</div>	
-		</div>	
-		<div id="Tama-Zone">
-			<!-- tama zone where animation is -->
-			<img id="tamaImage1" src="https://git.generalassemb.ly/peaton373/tamagotchi-mini-project/blob/master/image-folder/babyGroot-levels-1-4.jpg?raw=true"></img>
-
-<!-- 			<img id="tamaImage2" src="https://git.generalassemb.ly/peaton373/tamagotchi-mini-project/blob/master/image-folder/teenage-Groot-levels-5-8.jpg?raw=true"></img>
-
-			<img id="tamaImage3" src="https://git.generalassemb.ly/peaton373/tamagotchi-mini-project/blob/master/image-folder/groot%20levels-9-10.png?raw=true"></img> -->
-				
-		</div>
-		<div id="Button-Bar">
-			<!-- button bar -->
-			<button id="play">Play</button>	
-			<button id="feed">Feed</button>
-			<button id="rest">Rest</button>
-			<button id="create">Create</button>
-		</div>
-	
 	</div>
 
+	<div class="container">
+		<img class='switch' id='switchOff' src="https://git.generalassemb.ly/peaton373/tamagotchi-mini-project/blob/master/image-folder/babyGroot-levels-1-4.jpg?raw=true">
+		<img id='upgrade' src="https://git.generalassemb.ly/peaton373/tamagotchi-mini-project/blob/master/image-folder/groot%20levels-9-10.png?raw=true">
+		</img>
 
+	</div>
 
-	<script src="js/app.js"></script>
+	
+	<div class='tamagotchiZone'>
+
+		<p id="timer"></p>
+
+   </div>
+
+	<div class="scoreArena">
+		
+		<ul id='grootStatus'>
+			<li>Hunger = 0</li>
+			<li>Sleepiness = 0</li>
+			<li>Boredom = 0</li>
+			<li>Age = 0</li>
+		</ul>
+	</div>
+			
+<script src='js/app.js'></script>
 </body>
 </html>
