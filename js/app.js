@@ -330,7 +330,7 @@ const game = {
 
 
 
-    deadFrog: function() {
+    deadGroot: function() {
 
         if (game.tama.age >= 2) {
             let liveGroot = document.getElementById('adultGroot')
@@ -343,7 +343,7 @@ const game = {
         }
 
         if (game.tama.age < 2) {
-            let liveGroot = document.getElementById('adultGroot')
+            let liveGroot = document.getElementById('babyGroot')
             liveGroot.remove();
             let deadGroot = document.createElement('img')
             deadGroot.id = 'deadGroot'
