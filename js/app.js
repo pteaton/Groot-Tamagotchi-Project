@@ -247,7 +247,7 @@ const game = {
         let switchOff = document.createElement('img')
         switchOff.classList.add('switch')
         switchOff.id = 'switchOff'
-        switchOff.setAttribute('src', 'https://git.generalassemb.ly/peaton373/tamagotchi-mini-project/blob/master/image-folder/groot%20levels-9-10.png?raw=true')
+        switchOff.setAttribute('src', 'https://git.generalassemb.ly/peaton373/tamagotchi-mini-project/blob/master/image-folder/babyGroot-levels-1-4.jpg?raw=true')
         let container = document.querySelector(".container")
         container.appendChild(switchOff)
         game.startTimer();

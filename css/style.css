@@ -3,8 +3,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	
+	align-items: center;	
 }
 
 
@@ -24,9 +23,9 @@ form {
 #titleHeading{
 	color: solid black;
 	width:50%;
-	display: inline-block;
-	
+	display: inline-block;	
 }
+
 #name{
 	margin:10pt;
 }
